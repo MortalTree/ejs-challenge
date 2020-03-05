@@ -1,0 +1,10 @@
+<%# this will include the header page code above everything else %>
+<%# ./partials is crucial if the files being called are in a subfolder %>
+<%- include("./partials/header") -%>
+
+<h1>Home!</h1>
+<!-- calls the parameter defined in app.ejs -->
+<p> <%= startContent %></p>
+
+<%# this will include the footer page code below everything else %>
+<%- include("./partials/footer") -%>

@@ -1,0 +1,17 @@
+<%- include("./partials/header") -%>
+
+<h1>Compose</h1>
+
+<!-- form to contain the post elements -->
+<form class="item" action="/compose" method="post">
+  <div class="form-group">
+    <label for="input1">Title</label>
+    <!-- titleTxt is how we will reference this input field -->
+    <input class="form-control form-control-lg" id="input1" type="text" name="titleTxt">
+    <label for="input2">Post</label>
+    <textarea class="form-control form-control-lg" id="input2" name="postTxt" rows="6" cols="80"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" name="button">Publish</button>
+</form>
+
+<%- include("./partials/footer") -%>
